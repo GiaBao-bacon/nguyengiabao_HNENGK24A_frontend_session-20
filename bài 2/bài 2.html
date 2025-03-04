@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let loop = prompt("Bạn muốn tìm các số chia hết cho 5 từ 1 đến bao nhiêu: ");
+      if (isNaN(loop) || +loop <= 0) {
+        alert("Sai cú pháp");
+      } else {
+        loop = +loop;
+        console.log(`Cac so chia het cho 5 tu 1 den ${loop} la:`);
+        for (let i = 1; i <= loop; i++) {
+          if (i % 5 == 0) {
+            console.log(i);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
