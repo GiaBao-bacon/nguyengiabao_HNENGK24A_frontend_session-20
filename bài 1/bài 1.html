@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let acess = prompt("Bạn muốn tính tổng từ 1 đến bao nhiêu: ");
+      if (isNaN(acess ) || +acess <= 0) {
+        alert("Bị sai cú pháp rồi");
+      } else {
+       acess  = +acess;
+        let number = 0;
+        for (let i = 1; i <= acess ; i++) {
+          number  += i;
+        }
+        alert(`Tổng các số từ 1 đến ${acess} = ${number}`);
+      }
+    </script>
+  </body>
+</html>
